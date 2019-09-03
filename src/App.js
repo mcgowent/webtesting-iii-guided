@@ -2,7 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+export const asyncFunc = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Success!')
+    }, 1000)
+  })
+}
+
 class App extends Component {
+
+
+
   render() {
     return (
       <div className="App">
